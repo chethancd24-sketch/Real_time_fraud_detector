@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project is designed for real-time fraud detection in financial transactions. It combines multiple data sources, streaming data processing, machine learning, rule-based analysis, and monitoring to identify suspicious behavior and assess transaction risk.
+This project is designed for real-time fraud detection in financial transactions. It combines multiple data sources, streaming data processing, machine learning, rule-based analysis, and monitoring to identify suspicious behavior and assess transaction risk. This project detects fraudulent transactions in real time.
 
 ## Key Components
 

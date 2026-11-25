@@ -1,0 +1,28 @@
+rules:
+  - id: blacklisted_ip
+    description: Transaction originates from a blacklisted IP
+    weight: 1.0
+  - id: new_device_large_amount
+    description: Large amount from a new device
+    weight: 0.9
+  - id: impossible_travel
+    description: Impossible travel in less than one hour
+    weight: 0.95
+  - id: rapid_fire
+    description: More than 5 transactions in the last hour
+    weight: 0.75
+  - id: failed_logins
+    description: Four or more failed logins before the transaction
+    weight: 0.65
+  - id: vpn_high_risk
+    description: VPN/proxy plus a high-risk amount
+    weight: 0.7
+
+weights:
+  ml: 0.55
+  anomaly: 0.20
+  rules: 0.25
+
+thresholds:
+  legitimate_max: 0.35
+  suspicious_max: 0.75
